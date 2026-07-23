@@ -32,7 +32,7 @@ html{
   /* Single control for overall body-copy size sitewide: raise or
      lower this percentage to scale all reading text at once.
      100% = normal browser default (usually 16px). */
-  font-size:120%;   /* sitewide body-copy scale — change this to resize all reading text at once */
+  font-size:200%;   /* sitewide body-copy scale — change this to resize all reading text at once */
 }
 body{
   margin:0;
