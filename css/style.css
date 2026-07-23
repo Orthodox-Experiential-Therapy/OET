@@ -65,17 +65,21 @@ h1,h2,h3,h4{
   letter-spacing:0.22em;
   font-size:12.5px;
   font-weight:700;
+  line-height:1.3;
   color:var(--gold-bright);
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
+  position:relative;
+  display:inline-block;
+  padding-left:34px;
   margin-bottom:14px;
+  text-align:left;
 }
 .eyebrow::before{
   content:"";
+  position:absolute;
+  left:0;
+  top:0.55em;
   width:22px;height:1px;
   background:var(--gold-bright);
-  display:inline-block;
 }
 
 /* ---------- Orthodox cross divider — signature motif ---------- */
@@ -306,7 +310,7 @@ section{padding:96px 0;}
 
 .posture-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 26px;margin-top:18px;}
 @media (max-width:520px){.posture-grid{grid-template-columns:1fr;}}
-.posture-grid li{list-style:none;padding-left:20px;position:relative;color:var(--cream-text);font-size:0.938rem;}
+.posture-grid li{list-style:none;padding-left:20px;position:relative;color:#3a3628;font-size:0.938rem;}
 .posture-grid li::before{content:"—";position:absolute;left:0;color:var(--gold);}
 
 /* ---------- Why matters ---------- */
@@ -434,6 +438,13 @@ footer p.tag{color:rgba(239,230,208,0.85);font-size:1.0625rem;margin-bottom:32px
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto;}
   .reveal{transition:none;opacity:1;transform:none;}
+}
+
+@media (max-width:640px){
+  .hero{min-height:auto;}
+  .hero-content{padding:40px 20px 40px;}
+  .hero-pillars{margin-top:32px;padding-top:18px;}
+  section{padding:56px 0;}
 }
 
 /* ============================================================
